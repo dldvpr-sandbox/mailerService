@@ -18,7 +18,7 @@ final class EmailController extends AbstractController
     public function index(MailerInterface $mailer): Response
     {
         $email = new Email();
-        $email->from('contact@contact.fr')
+        $email
             ->to('toto@gmail.com')
             ->subject('Test email')
             ->html('<h1>Test email</h1>');
